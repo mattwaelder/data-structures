@@ -23,9 +23,9 @@ treeMethods.addChild = function(value) {
 };
 
 treeMethods.contains = function(target, currentNode) {
-  console.warn('/////////CONTAINS CALL//////////');
+  // console.warn('/////////CONTAINS CALL//////////');
   currentNode = currentNode || this;
-  console.log('PASSED IN: ', currentNode);
+  // console.log('PASSED IN: ', currentNode);
 
   var result = false;
 
@@ -48,7 +48,7 @@ treeMethods.contains = function(target, currentNode) {
   // // }
 
   if (currentNode.children.length !== 0) {
-    console.log('RECURSIVE CALL');
+    // console.log('RECURSIVE CALL');
     for (let i = 0; i < currentNode.children.length; i++) {
       var currentChild = currentNode.children[i];
       var hasNode = this.contains(target, currentChild);
