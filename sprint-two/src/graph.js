@@ -30,7 +30,7 @@ Graph.prototype.contains = function(node) {
 Graph.prototype.removeNode = function(node) {
   // console.log('TO BE REMOVED', this.nodes[node]);
 
-//if there are edges in the node we are deleting
+  //if there are edges in the node we are deleting
   if (this.nodes[node].length > 0) {
     // console.log('referenced in node thats being deleted', referenced);
     // console.log(this.nodes[referenced]);
